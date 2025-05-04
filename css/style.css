@@ -256,6 +256,7 @@ ul {
 
 .about .box-content p {
     margin: 0;
+    margin-bottom: -40px;
 }
 
 .about .content-left {
@@ -786,7 +787,7 @@ ul {
         font-size: 40px;
     }
     .resume .content-left .title-resume h2 {
-        font-size: 40px;
+        font-size: 32px;
     }
     .portfolio .content-image .portfolio-caption {
         position: absolute;
@@ -803,6 +804,20 @@ ul {
     }
     .contact .content-right .button {
         margin-top: 0;
+    }
+
+
+
+
+    .about .content-right {
+        background: url(../images/2.jpg);
+        /* background: url(../images/6.png); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 60% 40%;
+        height: 100%;
+        border-radius: 0 3px 3px 0;
+        /* width: 100%; */
     }
    
 }
@@ -852,22 +867,31 @@ ul {
 
 @media (max-width: 630px) {
     .home-intro .intro-content .row {
-        text-align: center;
+        text-align: left;
     }
+    span#animated-text{
+        font-size: 20px;
+        }
     .home-intro .intro-content .row .intro-caption h2 {
         font-size: 32px;
     }
     .about .content-left {
-        text-align: center;
+        text-align: justify;
+        margin-bottom: -40px;
+
+    }
+    .about .content-left button.button.extra-btn {
+        margin-bottom: 20px;
     }
     .about .content-left .section-title-left {
         text-align: center;
     }
     .about .content-left .content h2 {
-        font-size: 32px;
+        font-size: 35px;
+        text-align: left;
     }
     .resume .content-left .title-resume h2 {
-        font-size: 32px;
+        font-size: 25px;
     }
     .contact .content-left h2 {
         font-size: 32px;
@@ -884,7 +908,8 @@ ul {
 } 
 
 #animated-text {
-    font-size: 2.2rem;
+    /* font-size: 2.2rem;*/
+    font-size: 30px;
     font-weight: bold;
     display: inline-block;
    /* border-right: 2px solid #333;  Cursor effect */
